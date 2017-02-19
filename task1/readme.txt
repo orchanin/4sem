@@ -1,0 +1,1 @@
+Use _NOTMCW_ in NWORDS.cpp to set how many most common words from The Last Leaf by O.Henry you want to see in stat.txt
