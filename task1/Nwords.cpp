@@ -5,6 +5,10 @@
 #include <vector> 
 #include <iostream>
 
+/*
+Очень сложное название для константы. Так не пишут обычно.
+Ещё и с подчёркиваниями.
+*/
 const int _NOTMCW_ = 40; //number of the most common words in text
 
 
@@ -12,6 +16,11 @@ std::string prepare(const std::string& word)
 {
 	std::string result = word;
 	std::transform(word.begin(), word.end(), result.begin(), ::tolower);
+	
+	/*
+		Я в письме последнем писал, как тоже самое сделать с множеством и без цикла.
+		А можно просто воспользоваться ф-ей ispunct (ну или примерно как-то так называется)
+	*/
 	std::string symbols = ".,/:;'!?-";
 	for(int i = 0; i < symbols.size(); i++)
 		if (result[result.size() - 1] == symbols[i])
@@ -25,6 +34,12 @@ struct Statistics
 	std::string word;
 };
 
+/*
+	Часто названия переменных в подобных компараторах: lhs и rhs
+	Расшифровывается left hand side и right hand side.
+	К такому сокращению все привыкли.
+	Лучше в названия переменных цифры не вставлять.
+*/
 bool compare(const Statistics& stat1, const Statistics& stat2) 
 {
 	if (stat1.count != stat2.count) 
@@ -56,6 +71,12 @@ int main()
 	
 	int i = 0;
 	
+	/*
+		то, что можно писать так:
+		for (const auto& it : allWords)
+		
+		я вроде говорил.
+	*/
 	for (auto it = allWords.begin(); it != allWords.end(); ++it)
 	{
 		stat[i].word = it->first;
