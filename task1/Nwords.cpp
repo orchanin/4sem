@@ -5,11 +5,8 @@
 #include <vector> 
 #include <iostream>
 
-/*
-Очень сложное название для константы. Так не пишут обычно.
-Ещё и с подчёркиваниями.
-*/
-const int _NOTMCW_ = 40; //number of the most common words in text
+
+const int WORDS = 40; //number of the most common words in text
 
 
 std::string prepare(const std::string& word)
