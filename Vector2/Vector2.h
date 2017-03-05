@@ -8,6 +8,11 @@
 #include <iostream>
 #include <cmath>
 
+/*
+Старайтесь никогда в с++ не использовать define
+Пишите const float PI = 3.14159265f;
+*/
+
 #define PI 3.14159265
 
 struct Vector2 {
