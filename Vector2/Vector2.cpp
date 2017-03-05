@@ -14,6 +14,10 @@ Vector2::Vector2(float x, float y)
     this->y = y;
 }
 
+/*
+    Можно ещё было бы написать Vector2::Vector2() = default;
+*/
+
 Vector2::Vector2()
 {
     
