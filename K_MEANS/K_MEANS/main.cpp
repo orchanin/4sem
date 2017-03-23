@@ -5,8 +5,8 @@
 #include <iostream>
 #include <exception>
 
-const int K = 130;
-const int iterationCount = 50;
+const int K = 150;
+const int iterationCount = 2;
 
 using Centroids = std::vector<sf::Color>;
 using ClosestCentroidIndices = std::vector<int>;
